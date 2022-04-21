@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoelpc4\LaravelCloudinary;
+namespace SdbAgency\LaravelCloudinary;
 
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Foundation\Application;
@@ -32,5 +32,9 @@ class CloudinaryServiceProvider extends ServiceProvider
 
             return new FilesystemAdapter(new Filesystem($adapter, $config), $adapter, $config);
         });
+
+        $this->publishes([
+            __DIR__.'/../config/flysystem-cloudinary.php' => config_path('flysystem-cloudinary.php'),
+        ], 'config');
     }
 }

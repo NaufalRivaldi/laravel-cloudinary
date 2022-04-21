@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoelpc4\LaravelCloudinary;
+namespace SdbAgency\LaravelCloudinary;
 
 use League\Flysystem\FilesystemException;
 use RuntimeException;

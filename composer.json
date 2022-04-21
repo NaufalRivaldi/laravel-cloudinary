@@ -1,5 +1,5 @@
 {
-    "name": "yoelpc4/laravel-cloudinary",
+    "name": "sdbagency/laravel-cloudinary",
     "description": "Laravel Cloudinary filesystem cloud driver.",
     "keywords": [
         "laravel",
@@ -32,18 +32,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Yoelpc4\\LaravelCloudinary\\": "src/"
+            "SdbAgency\\LaravelCloudinary\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yoelpc4\\LaravelCloudinary\\Tests\\": "tests/"
+            "SdbAgency\\LaravelCloudinary\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Yoelpc4\\LaravelCloudinary\\CloudinaryServiceProvider"
+                "SdbAgency\\LaravelCloudinary\\CloudinaryServiceProvider"
             ]
         }
     },

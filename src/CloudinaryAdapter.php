@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoelpc4\LaravelCloudinary;
+namespace SdbAgency\LaravelCloudinary;
 
 use Cloudinary\Api\Admin\AdminApi;
 use Cloudinary\Api\Exception\ApiError;
@@ -110,6 +110,7 @@ class CloudinaryAdapter implements FilesystemAdapter
                 'use_filename'    => true,
                 'unique_filename' => false,
                 'resource_type'   => $this->getResourceType($path),
+                'upload_preset'   => config('flysystem-cloudinary.upload_preset'),
             ]);
         } catch (ApiError $e) {
             throw UnableToWriteFile::atLocation($path, $e->getMessage(), $e);
